@@ -1,0 +1,30 @@
+{
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "description": "RESTful Todo API built with Node.js, Express, and MongoDB.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "todo",
+    "rest-api"
+  ],
+  "author": "Anurag Dangi",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
