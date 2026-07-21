@@ -39,15 +39,10 @@ export const getTodoById = asyncHandler(async (req, res) => {
 });
 
 export const updateTodo = asyncHandler(async (req, res) => {
-  const { title, description, completed, dueDate } = req.body;
-
   const todo = await Todo.findByIdAndUpdate(
     req.params.id,
     {
-      title,
-      description,
-      completed,
-      dueDate,
+      $set: req.body,
     },
     {
       new: true,
